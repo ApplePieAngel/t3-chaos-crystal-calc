@@ -1,0 +1,158 @@
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+html{
+  background-color: #474646;
+  color: black;
+}
+
+#calculator-body {
+  border: 1px solid rgb(206, 206, 132);
+  inset: #d0b166;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  background-color: #d0b166;
+  margin-top: 1em;
+}
+
+body{
+  padding: 0 20px;
+  width: 100%;
+}
+
+footer{
+  margin-top: 10%;
+  padding: 0.5em;
+  border-radius: 7px;
+  border: 1px solid rgb(206, 206, 132);
+  background-color: #d0b166;
+}
+
+footer > p {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+footer > span {
+  display: flex;
+  color: black;
+  font-weight: bold;
+}
+
+h1{
+  border: 1px solid #474646;
+  border-radius: 7px;
+  background-color: #474646;
+  color: white;
+}
+
+img{
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #333;
+  text-align: center;
+  color: black;
+}
+
+td {
+  background-color: whitesmoke;
+}
+th {
+  background-color: rgb(143, 143, 142);
+}
+
+
+tr:nth-child(n+2) > td:nth-child(5), tr:nth-child(n+2) > td:nth-child(6){
+  font-weight: bold;
+}
+
+tr:nth-child(n+2) > td:nth-child(5):hover {
+  background-color: lightgreen;
+}
+
+tr:nth-child(n+2) > td:nth-child(6):hover {
+  background-color: rgba(224, 119, 119, 0.938);
+}
+
+button{
+  margin: 5px;
+}
+
+#button-div{
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  clear: both;
+
+}
+
+span{
+  display: flex;
+  justify-content: right;
+  margin-right: 25px;
+  color: white;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+*{
+  font-family: 'Fredoka', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin:0 auto; /* this will center the page */
+  width:500px; /*  use your width here */
+}
+
+
+header > h1, table, p{
+  display: flex;
+  justify-content: center;
+}
+
+header > p {
+  text-align: center;
+}
+
+
+button{
+  float: right;
+  margin-top: 1%;
+  margin-right: 27%;
+}
+
+table { 
+  clear: both;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+/*Font breaks at 540px */
+
+
+/*Table breaks at 440px width */
+
+
+/*Height beyond 860 pixels is just extra gray space */  
+
